@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "Void_spirit_icon.png",
+      "filename" : "hero119.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "Void_spirit_icon@2x.png",
+      "filename" : "hero119@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "Void_spirit_icon@3x.png",
+      "filename" : "hero119@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }
