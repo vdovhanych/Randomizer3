@@ -10,7 +10,7 @@ import Combine
 
 
 struct AsyncImageView: View{
-    @State private var imageLoader = ImageLoader()
+    @StateObject private var imageLoader = ImageLoader()
     @Binding var urlString: String?
     
     init(urlString: Binding<String?>){
