@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E14534A2581269F000536E5 /* RandomHeroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1453492581269F000536E5 /* RandomHeroView.swift */; };
 		1EA5856E257F8E79007829AB /* Randomizer3App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA5856D257F8E79007829AB /* Randomizer3App.swift */; };
 		1EA58570257F8E79007829AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA5856F257F8E79007829AB /* ContentView.swift */; };
 		1EA58572257F8E7B007829AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EA58571257F8E7B007829AB /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1E1453492581269F000536E5 /* RandomHeroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomHeroView.swift; sourceTree = "<group>"; };
 		1EA5856A257F8E79007829AB /* Randomizer3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Randomizer3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EA5856D257F8E79007829AB /* Randomizer3App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Randomizer3App.swift; sourceTree = "<group>"; };
 		1EA5856F257F8E79007829AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,9 +97,10 @@
 			children = (
 				1EA5856D257F8E79007829AB /* Randomizer3App.swift */,
 				1EA5856F257F8E79007829AB /* ContentView.swift */,
+				1E1453492581269F000536E5 /* RandomHeroView.swift */,
+				1EA585AB257FA5D8007829AB /* AsyncImageView.swift */,
 				1EA585A6257F9C46007829AB /* MealGenerator.swift */,
 				1EA585A1257F9657007829AB /* MealData.swift */,
-				1EA585AB257FA5D8007829AB /* AsyncImageView.swift */,
 				1EA58571257F8E7B007829AB /* Assets.xcassets */,
 				1EA58576257F8E7B007829AB /* Info.plist */,
 				1EA58573257F8E7B007829AB /* Preview Content */,
@@ -245,6 +248,7 @@
 				1EA585A7257F9C46007829AB /* MealGenerator.swift in Sources */,
 				1EA58570257F8E79007829AB /* ContentView.swift in Sources */,
 				1EA5856E257F8E79007829AB /* Randomizer3App.swift in Sources */,
+				1E14534A2581269F000536E5 /* RandomHeroView.swift in Sources */,
 				1EA585AC257FA5D8007829AB /* AsyncImageView.swift in Sources */,
 				1EA585A2257F9657007829AB /* MealData.swift in Sources */,
 			);
@@ -402,8 +406,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Randomizer3/Preview Content\"";
-				DEVELOPMENT_TEAM = LHFKN25Z5M;
+				DEVELOPMENT_TEAM = HYPR9Y6K78;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Randomizer3/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -411,7 +416,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = vitalij.dovhanyc.Randomizer3;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.vdovhanych.random1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -424,8 +430,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Randomizer3/Preview Content\"";
-				DEVELOPMENT_TEAM = LHFKN25Z5M;
+				DEVELOPMENT_TEAM = HYPR9Y6K78;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Randomizer3/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -433,7 +440,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = vitalij.dovhanyc.Randomizer3;
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = cz.vdovhanych.random1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
