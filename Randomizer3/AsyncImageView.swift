@@ -27,7 +27,8 @@ struct AsyncImageView: View{
                     .scaledToFit()
                     .cornerRadius(20)
                     .padding()
-            }else{Text ("No Image")
+            }else{Text ("Press the button")
+                .bold()
                 .padding()
                 .foregroundColor(.black)
                 .padding(.all,10)
@@ -41,8 +42,8 @@ struct AsyncImageView: View{
     var body: some View{
         image.onChange(of: urlString, perform: { value in
             if let urlString = urlString, let url = URL(string: urlString){
-            imageLoader.url = url
-            imageLoader.load()
+                imageLoader.url = url
+                imageLoader.load()
                 
             }
         })
@@ -50,9 +51,9 @@ struct AsyncImageView: View{
 }
 
 final class ImageLoader: ObservableObject{
-   
+    
     @Published var image: UIImage?
-   
+    
     var url: URL?
     
     func load(){

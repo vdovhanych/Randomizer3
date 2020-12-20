@@ -13,9 +13,9 @@ struct ContentView: View {
     var body: some View {
         
         TabView {
-            RandomHeroView().tabItem {VStack{ Image (systemName: "gamecontroller")
+            RandomHeroView().tabItem { VStack{ Image ("heroTabIcon").padding()
                 Text ("Heroes")}}
-            MealView().tabItem {VStack{ Image (systemName: "leaf.arrow.circlepath")
+            MealView().tabItem {VStack{ Image("mealTabIcon")
                 Text ("Meals")}}
         }
         
@@ -27,7 +27,7 @@ struct MealView: View {
     
     @StateObject private var mealGenerator = MealGenerator()
     
-    // Button for meal generating
+    // Button for meal generator
     
     var actionButton: some View {
         Button ("Get Random Meal"){
@@ -37,56 +37,50 @@ struct MealView: View {
         .padding(.all, 20)
         .background(Color.blue)
         .cornerRadius(20)
-//        .onAppear{
-//            mealGenerator.fetchRandomMeal()
-//        }
+        //  Option for the app to generate random meal on page appearing, deciden not to use.
+        //        .onAppear{
+        //            mealGenerator.fetchRandomMeal()
+        //        }
     }
     
     var body: some View {
         
-        // Comented background for testeing
-
-        //        ZStack{
-        //
-        //            //Background MealView tab
-        //
-        //            Rectangle().foregroundColor(Color(red:200/255,green: 143/255, blue:32/255))
-        //                .edgesIgnoringSafeArea(.all)
-        //
-        //            Rectangle().foregroundColor(Color(red:228/255, green: 195/255, blue: 76/255))
-        //                .rotationEffect(Angle(degrees:58))
-        //                .edgesIgnoringSafeArea(.all)
+        //  THIS IS WHRE ALL Meal View UI is (imgae ui is in AsyncImageView)
         
-        // THIS IS WHRE ALL Meal View UI is (imgae ui is in AsyncImageView)
         ScrollView {
             
             VStack{
+                
+                Spacer()
                 
                 actionButton
                 if let name = mealGenerator.currentMeal?.name{
                     
                     Text(name)
-                        .font(.largeTitle)
+                        .font(.largeTitle).padding()
                 }
                 
                 AsyncImageView(urlString: $mealGenerator.currentImageURLString)
                 
                 if let ingredients = mealGenerator.currentMeal?.ingredients{
+                    
                     HStack{
+                        
                         Text("Ingredients")
                             .font(.title2)
-                            .padding(.all,15)
+                            .bold()
+                            .padding(.bottom, 15)
+                            .padding(.top, 15)
+                            .offset(x:5)
                         
                         Spacer()
                     }
                     
                     ForEach(ingredients, id: \.self) {ingridient in
                         
-                        
-                        
                         HStack{
-                            Text (ingridient.name + " - " + ingridient.measure)
                             
+                            Text (ingridient.name + " - " + ingridient.measure).offset(x: 15)
                             
                             Spacer()
                         }
@@ -100,22 +94,21 @@ struct MealView: View {
                     HStack{
                         Text ("Instructions")
                             .font(.title2)
-                            .padding(.all,15)
+                            .bold()
+                            .padding(.bottom, 5)
+                            .padding(.top, 15)
+                            .offset(x:5)
                         
                         Spacer()
                     }
                     
                     Text (instrucitons)
                         .padding()
-                    
                 }
-                
             }.padding()
         }
     }
-    
 }
-//} - zstack ending bracket
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

@@ -11,7 +11,7 @@ import Foundation
 struct MealData: Decodable {
     let meals: [Meal]
 }
- 
+
 struct Meal: Decodable {
     let name: String
     let imageUrlString: String

@@ -40,9 +40,7 @@ struct RandomHeroView: View {
             Spacer()
             
             HStack{
-                
-                
-                
+             
                 Text ("Dota2 Heroes")
                     .bold()
                 
@@ -52,15 +50,15 @@ struct RandomHeroView: View {
             Spacer()
             
             
-            //Hero name 1st tab
+//  Todo section as to showing hero name coresponding with the image.
             
-//            Text("HERO NAME")
-//                .foregroundColor(.black)
-//                .padding(.all,10)
-//                .background(Color.white.opacity(0.6))
-//                .cornerRadius(20)
-//
-//            Spacer()
+            //            Text("HERO NAME")
+            //                .foregroundColor(.black)
+            //                .padding(.all,10)
+            //                .background(Color.white.opacity(0.6))
+            //                .cornerRadius(20)
+            //
+            //            Spacer()
             
             
             HStack{
@@ -72,7 +70,6 @@ struct RandomHeroView: View {
                     .aspectRatio(contentMode:.fit)
                     .background(Color.white.opacity(0.5))
                     .cornerRadius(20)
-                
                 
                 Spacer()
                 
