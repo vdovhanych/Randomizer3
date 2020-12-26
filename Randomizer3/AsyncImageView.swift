@@ -30,9 +30,8 @@ struct AsyncImageView: View{
             }else{Text ("Press the button")
                 .bold()
                 .padding()
-                .foregroundColor(.black)
+                .foregroundColor(.primary)
                 .padding(.all,10)
-                .background(Color.white.opacity(0.6))
                 .cornerRadius(20)
                 
             }
