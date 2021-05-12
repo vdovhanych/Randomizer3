@@ -19,7 +19,7 @@ final class MealGenerator: ObservableObject {
             .receive(on: DispatchQueue.main)
             .sink { _ in }
                 
-                receiveValue: { data, _ in
+                receiveValue: { data, _ in 
                     if let mealData = try? JSONDecoder().decode(MealData.self,from: data){
                         self.currentMeal = mealData.meals.first
                         self.currentImageURLString = mealData.meals.first?.imageUrlString
